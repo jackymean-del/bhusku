@@ -16,7 +16,7 @@ export default function Home() {
       <section className="flex flex-col items-center bg-gradient-to-b from-[#FAF9F5] to-white px-6 pb-20 pt-[86px] text-center">
         <BhuskuMark size={64} animate className="mb-6" />
         <span className="mb-5 rounded-full border border-[#ECE6DC] bg-white px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-[0.12em] text-[#9A8A5E]">
-          Product studio
+          Tech &amp; Creative Studio
         </span>
         <h1 className="max-w-[760px] text-[clamp(34px,6vw,60px)] font-extrabold leading-[1.05] tracking-[-1.5px] text-[#13111E] [animation:fadeUp_0.6s_ease]">
           Heavy on craft.<br /><span className="text-[#7C6FE0]">Full of energy.</span>
@@ -43,7 +43,7 @@ export default function Home() {
         <div className="mx-auto max-w-[1000px]">
           <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.14em] text-[#9A95BC]">Who we are</p>
           <h2 className="max-w-[720px] text-[clamp(24px,3.5vw,34px)] font-bold leading-[1.2] tracking-[-0.6px] text-[#13111E]">
-            An independent studio making software that respects your time.
+            An independent tech &amp; creative studio making software that respects your time.
           </h2>
           <div className="mt-10 grid gap-5 sm:grid-cols-3">
             {VALUES.map(v => (

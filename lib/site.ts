@@ -15,7 +15,7 @@ export const BRAND = {
   name: 'bhusku',
   tagline: 'Heavy on craft. Full of energy.',
   blurb:
-    'bhusku is an independent product studio building calm, capable software for the work people actually do. We sweat the details so the tools disappear and the work gets easier.',
+    'bhusku is an independent tech & creative studio building calm, capable software for the work people actually do. We sweat the details so the tools disappear and the work gets easier.',
   email: 'hello@bhusku.com',
 }
 
