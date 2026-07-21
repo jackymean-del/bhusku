@@ -1,11 +1,12 @@
 /**
  * Shared chrome for the bhusku parent-brand site — sticky nav + footer.
- * Per the brand system, bhusku is TYPOGRAPHIC ONLY (no icon) — the Fader U
- * belongs to schedU, not the parent. Footer carries the legal/policy links
+ * bhusku now carries the family Fader U mark (the U-that-also-reads-as-b),
+ * paired with the typographic wordmark. Footer carries the legal/policy links
  * Razorpay onboarding requires.
  */
 import type { ReactNode } from 'react'
 import Link from 'next/link'
+import { BhuskuMark } from '@/components/Logo'
 import { BRAND, SCHEDU_URL } from '@/lib/site'
 
 const NAV = [
@@ -35,7 +36,10 @@ export function BrandChrome({ children }: { children: ReactNode }) {
     <div className="flex min-h-screen flex-col bg-white text-[#13111E]">
       {/* Nav */}
       <nav className="sticky top-0 z-[200] flex h-[58px] items-center border-b border-[#F0EDFF] bg-white/95 px-6 backdrop-blur-sm sm:px-12">
-        <Link href="/" className="flex shrink-0 items-center no-underline"><Wordmark /></Link>
+        <Link href="/" className="bm-hover flex shrink-0 items-center gap-2.5 no-underline">
+          <BhuskuMark size={32} animate />
+          <Wordmark />
+        </Link>
         <div className="flex-1" />
         <div className="mr-6 hidden items-center gap-7 sm:flex">
           {NAV.map(l => (
@@ -58,7 +62,10 @@ export function BrandChrome({ children }: { children: ReactNode }) {
       <footer className="border-t border-[#F0EDFF] bg-[#FAF9F5] px-6 py-10 sm:px-12">
         <div className="mx-auto flex max-w-[1100px] flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
           <div className="max-w-[320px]">
-            <Wordmark />
+            <div className="flex items-center gap-2.5">
+              <BhuskuMark size={28} />
+              <Wordmark />
+            </div>
             <p className="mt-2 text-[13px] leading-[1.7] text-[#6B6785]">{BRAND.tagline}</p>
             <a href={`mailto:${BRAND.email}`} className="mt-2 inline-block text-[13px] font-medium text-[#7C6FE0] no-underline">
               {BRAND.email}

@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { BrandChrome } from '@/components/BrandChrome'
+import { BhuskuMark } from '@/components/Logo'
 import { BRAND, PRODUCTS, BUSINESS, SCHEDU_URL } from '@/lib/site'
 
 const VALUES = [
@@ -13,6 +14,7 @@ export default function Home() {
     <BrandChrome>
       {/* Hero */}
       <section className="flex flex-col items-center bg-gradient-to-b from-[#FAF9F5] to-white px-6 pb-20 pt-[86px] text-center">
+        <BhuskuMark size={64} animate className="mb-6" />
         <span className="mb-5 rounded-full border border-[#ECE6DC] bg-white px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-[0.12em] text-[#9A8A5E]">
           Product studio
         </span>
@@ -63,13 +65,8 @@ export default function Home() {
           <div className="mt-9 grid gap-5">
             {PRODUCTS.map(p => (
               <a key={p.name} href={p.href} className="group no-underline">
-                <div className="flex flex-col gap-4 rounded-[16px] border border-[#E8E4FF] bg-white p-7 transition-all hover:border-[#D8D2FF] sm:flex-row sm:items-center">
-                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-[15px]" style={{ background: p.markColor }}>
-                    <svg width="30" height="30" viewBox="0 0 52 52" fill="none">
-                      <path d="M 16 9 L 16 30 A 10 10 0 0 0 36 30 L 36 22" stroke="white" strokeWidth="8" fill="none" strokeLinecap="round" />
-                      <circle cx="36" cy="12.5" r="4.5" fill="#D4920E" />
-                    </svg>
-                  </div>
+                <div className="bm-hover flex flex-col gap-4 rounded-[16px] border border-[#E8E4FF] bg-white p-7 transition-all hover:border-[#D8D2FF] sm:flex-row sm:items-center">
+                  <BhuskuMark size={56} />
                   <div className="min-w-0 flex-1">
                     <div className="flex items-center gap-2.5">
                       <span className="text-[19px] font-black tracking-[-0.4px] text-[#13111E]">
