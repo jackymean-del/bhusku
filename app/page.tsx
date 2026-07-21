@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { BrandChrome } from '@/components/BrandChrome'
 import { BhuskuMark } from '@/components/Logo'
+import { HeroNet } from '@/components/HeroNet'
 import { BRAND, PRODUCTS, BUSINESS, SCHEDU_URL } from '@/lib/site'
 
 const VALUES = [
@@ -9,32 +10,61 @@ const VALUES = [
   { title: 'Honest by default', body: 'Clear pricing, no dark patterns, and features that do what they say. If it isn’t ready, we say so.' },
 ]
 
+// Hero headline, split for the staggered word-reveal (à la anthropic.com).
+const HERO_WORDS = [
+  { t: 'Calm,', accent: true }, { t: 'capable', accent: true }, { t: 'software' },
+  { t: 'for' }, { t: 'the' }, { t: 'work' }, { t: 'people' }, { t: 'actually' }, { t: 'do.' },
+]
+
 export default function Home() {
   return (
     <BrandChrome>
-      {/* Hero */}
-      <section className="flex flex-col items-center bg-gradient-to-b from-[#FAF9F5] to-white px-6 pb-20 pt-[86px] text-center">
-        <BhuskuMark size={64} animate className="mb-6" />
-        <span className="mb-5 rounded-full border border-[#ECE6DC] bg-white px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-[0.12em] text-[#9A8A5E]">
-          Tech &amp; Creative Studio
-        </span>
-        <h1 className="max-w-[760px] text-[clamp(34px,6vw,60px)] font-extrabold leading-[1.05] tracking-[-1.5px] text-[#13111E] [animation:fadeUp_0.6s_ease]">
-          Heavy on craft.<br /><span className="text-[#7C6FE0]">Full of energy.</span>
-        </h1>
-        <p className="mt-6 max-w-[560px] text-[16.5px] leading-[1.75] text-[#4B5275]">
-          {BRAND.blurb}
-        </p>
-        <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
-          <a href={SCHEDU_URL} className="no-underline">
-            <button className="rounded-[10px] bg-[#13111E] px-6 py-[13px] text-[14px] font-bold text-white">
-              Explore schedU →
-            </button>
-          </a>
-          <Link href="/contact" className="no-underline">
-            <button className="rounded-[10px] border border-[#E8E4FF] bg-white px-6 py-[13px] text-[14px] font-bold text-[#4B5275] transition-colors hover:border-[#7C6FE0] hover:text-[#7C6FE0]">
-              Get in touch
-            </button>
-          </Link>
+      {/* Hero — the first section after the nav, anthropic.com-style */}
+      <section className="relative overflow-hidden bg-gradient-to-b from-[#FAF9F5] to-white px-6 pb-24 pt-[72px] sm:px-12">
+        <div className="mx-auto grid max-w-[1180px] items-center gap-14 lg:grid-cols-[1.05fr_0.95fr]">
+          {/* Left — editorial text */}
+          <div className="max-w-[640px]">
+            <span
+              className="reveal-fade inline-block rounded-full border border-[#ECE6DC] bg-white px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-[0.12em] text-[#9A8A5E]"
+              style={{ animationDelay: '80ms' }}
+            >
+              Tech &amp; Creative Studio
+            </span>
+            <h1 className="mt-6 text-[clamp(36px,5.4vw,62px)] font-extrabold leading-[1.04] tracking-[-1.6px] text-[#13111E]">
+              <span className="sr-only">Calm, capable software for the work people actually do.</span>
+              <span aria-hidden="true">
+                {HERO_WORDS.map((w, i) => (
+                  <span key={i} className="reveal-word mr-[0.26em]" style={{ animationDelay: `${140 + i * 55}ms` }}>
+                    <span className={w.accent ? 'text-[#7C6FE0]' : ''}>{w.t}</span>
+                  </span>
+                ))}
+              </span>
+            </h1>
+            <p
+              className="reveal-fade mt-6 max-w-[540px] text-[16.5px] leading-[1.75] text-[#4B5275]"
+              style={{ animationDelay: '640ms' }}
+            >
+              bhusku is an independent tech &amp; creative studio. We sweat the details until the tools
+              disappear and the work gets easier — schedU is our first product, with more on the way.
+            </p>
+            <div className="reveal-fade mt-9 flex flex-wrap items-center gap-3" style={{ animationDelay: '740ms' }}>
+              <a href={SCHEDU_URL} className="no-underline">
+                <button className="rounded-[10px] bg-[#13111E] px-6 py-[13px] text-[14px] font-bold text-white">
+                  Explore schedU →
+                </button>
+              </a>
+              <Link href="/contact" className="no-underline">
+                <button className="rounded-[10px] border border-[#E8E4FF] bg-white px-6 py-[13px] text-[14px] font-bold text-[#4B5275] transition-colors hover:border-[#7C6FE0] hover:text-[#7C6FE0]">
+                  Get in touch
+                </button>
+              </Link>
+            </div>
+          </div>
+
+          {/* Right — self-drawing brand network */}
+          <div className="reveal-fade hidden lg:block" style={{ animationDelay: '320ms' }}>
+            <HeroNet />
+          </div>
         </div>
       </section>
 
