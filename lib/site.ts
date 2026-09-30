@@ -2,10 +2,7 @@
  * bhusku parent-brand constants + business identity.
  *
  * The BUSINESS.* fields below feed the legal/policy pages and Razorpay
- * onboarding. Values marked "FILL:" are placeholders the owner MUST replace
- * with real details before the policy pages go live / before submitting the
- * site to Razorpay - a compliance page must not carry a placeholder or an
- * invented value. Everything else (brand name, tagline, contact email) is real.
+ * onboarding. Keep them matching the proprietor's KYC details.
  */
 export const SITE_URL = 'https://bhusku.com'
 export const APP_URL = 'https://app.schedu.bhusku.com'
@@ -19,12 +16,12 @@ export const BRAND = {
   email: 'hello@bhusku.com',
 }
 
-// Business/legal identity - sole proprietorship. FILL the placeholders.
+// Business/legal identity - sole proprietorship.
 export const BUSINESS = {
   // The proprietor's full legal name (as on PAN / bank account used for payouts).
-  legalName: 'FILL: Proprietor legal name',
+  legalName: 'Jugal Sunar',
   // "<Legal name> (sole proprietor), trading as bhusku"
-  entityLine: 'FILL: Proprietor legal name (sole proprietor), trading as bhusku',
+  entityLine: 'Jugal Sunar (sole proprietor), trading as bhusku',
   email: 'hello@bhusku.com',
   // Optional but recommended for Razorpay + trust.
   phone: '+91 96923 31138',
