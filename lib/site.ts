@@ -27,9 +27,9 @@ export const BUSINESS = {
   entityLine: 'FILL: Proprietor legal name (sole proprietor), trading as bhusku',
   email: 'hello@bhusku.com',
   // Optional but recommended for Razorpay + trust.
-  phone: 'FILL: +91 XXXXX XXXXX',
-  address: 'FILL: City, State, India',
-  jurisdiction: 'FILL: City, State', // courts of this place govern disputes
+  phone: '+91 96923 31138',
+  address: ['Bhusku', 'Sambalpur, Odisha', 'India'],
+  jurisdiction: 'Sambalpur, Odisha', // courts of this place govern disputes
   // Kept in sync with schedU's checkout (frontend subscription page + backend
   // billing config). If pricing changes, update all three.
   proMonthlyINR: 333,

@@ -28,11 +28,13 @@ export default function ContactPage() {
             </div>
             <div>
               <div className="text-[11px] font-bold uppercase tracking-[0.1em] text-[#9A95BC]">Phone</div>
-              <span className="text-[#4B5275]">{BUSINESS.phone}</span>
+              <a href={`tel:${BUSINESS.phone.replace(/\s/g, '')}`} className="text-[#4B5275] no-underline">{BUSINESS.phone}</a>
             </div>
             <div>
               <div className="text-[11px] font-bold uppercase tracking-[0.1em] text-[#9A95BC]">Address</div>
-              <span className="text-[#4B5275]">{BUSINESS.address}</span>
+              <address className="not-italic text-[#4B5275]">
+                {BUSINESS.address.map(line => <div key={line}>{line}</div>)}
+              </address>
             </div>
           </div>
         </div>
