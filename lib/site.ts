@@ -19,9 +19,9 @@ export const BRAND = {
 // Business/legal identity - sole proprietorship.
 export const BUSINESS = {
   // The proprietor's full legal name (as on PAN / bank account used for payouts).
-  legalName: 'Jugal Sunar',
+  legalName: 'Jugal K. Sunar',
   // "<Legal name> (sole proprietor), trading as bhusku"
-  entityLine: 'Jugal Sunar (sole proprietor), trading as bhusku',
+  entityLine: 'Jugal K. Sunar (sole proprietor), trading as bhusku',
   email: 'hello@bhusku.com',
   // Optional but recommended for Razorpay + trust.
   phone: '+91 96923 31138',
