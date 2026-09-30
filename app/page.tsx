@@ -5,22 +5,22 @@ import { HeroNet } from '@/components/HeroNet'
 import { Reveal } from '@/components/Reveal'
 import { BRAND, PRODUCTS, BUSINESS, SCHEDU_URL } from '@/lib/site'
 
-// Hero headline, split for the staggered word-reveal (à la anthropic.com).
+// Hero headline, split for the staggered word-reveal.
 const HERO_WORDS = [
   { t: 'Calm,', accent: true }, { t: 'capable', accent: true }, { t: 'software' },
   { t: 'for' }, { t: 'the' }, { t: 'work' }, { t: 'people' }, { t: 'actually' }, { t: 'do.' },
 ]
 
-// Honest credibility markers — no fabricated logos, testimonials, or metrics.
+// Honest credibility markers - no fabricated logos, testimonials, or metrics.
 const TRUST = [
-  { title: 'Founder-led & independent', body: 'No investors, no bloat — the people building make the calls.' },
+  { title: 'Founder-led & independent', body: 'No investors, no bloat - the people building make the calls.' },
   { title: 'Live in production', body: 'schedU is available today, with more products in the works.' },
   { title: 'Honest by default', body: 'Transparent pricing, secure INR billing, and no dark patterns.' },
 ]
 
 const PRINCIPLES = [
   { n: '01', title: 'Craft over clutter', body: 'Every screen earns its place. We remove before we add, so the tool gets out of the way of the work.' },
-  { n: '02', title: 'Built for the real day', body: 'Software modelled on how people actually work — messy timetables, last-minute changes, real constraints.' },
+  { n: '02', title: 'Built for the real day', body: 'Software modelled on how people actually work - messy timetables, last-minute changes, real constraints.' },
   { n: '03', title: 'Honest by default', body: 'Clear pricing, no dark patterns, and features that do what they say. If it isn’t ready, we say so.' },
 ]
 
@@ -37,7 +37,7 @@ const H2 = 'text-[clamp(25px,3.5vw,36px)] font-bold leading-[1.15] tracking-[-0.
 export default function Home() {
   return (
     <BrandChrome>
-      {/* ── Hero — first section after the nav, anthropic.com-style ── */}
+      {/* ── Hero - first section after the nav ── */}
       <section className="relative overflow-hidden bg-gradient-to-b from-[#FAF9F5] to-white px-6 pb-24 pt-[72px] sm:px-12">
         <div className="mx-auto grid max-w-[1180px] items-center gap-14 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="max-w-[640px]">
@@ -62,7 +62,7 @@ export default function Home() {
               style={{ animationDelay: '640ms' }}
             >
               bhusku is an independent tech &amp; creative studio. We sweat the details until the tools
-              disappear and the work gets easier — schedU is our first product, with more on the way.
+              disappear and the work gets easier - schedU is our first product, with more on the way.
             </p>
             <div className="reveal-fade mt-9 flex flex-wrap items-center gap-3" style={{ animationDelay: '740ms' }}>
               <a href={SCHEDU_URL} className="no-underline">
@@ -117,7 +117,7 @@ export default function Home() {
             </h2>
             <p className="mt-5 max-w-[620px] text-[15.5px] leading-[1.8] text-[#4B5275]">
               bhusku is small and founder-led. We’d rather ship one tool that truly works than ten that
-              almost do. Every product starts from how people actually work — then we remove until only
+              almost do. Every product starts from how people actually work - then we remove until only
               the useful remains.
             </p>
           </Reveal>
@@ -176,7 +176,7 @@ export default function Home() {
             ))}
             <Reveal delay={120}>
               <div className="rounded-[18px] border border-dashed border-[#E0D9F5] bg-white/50 px-7 py-6 text-[13.5px] text-[#9A95BC]">
-                More products in the works — <Link href="/contact" className="font-semibold text-[#7C6FE0] no-underline">say hello</Link> if you want to hear first.
+                More products in the works - <Link href="/contact" className="font-semibold text-[#7C6FE0] no-underline">say hello</Link> if you want to hear first.
               </div>
             </Reveal>
           </div>
@@ -194,7 +194,7 @@ export default function Home() {
             <div className="mt-8 max-w-[720px] rounded-[18px] border border-[#EFEBFF] bg-[#FCFBFF] p-7 sm:p-8">
               <p className="text-[15px] leading-[1.8] text-[#4B5275]">
                 Our products are free to start. schedU offers an optional <strong className="text-[#13111E]">Pro</strong> plan
-                billed securely in INR via Razorpay (UPI, cards &amp; netbanking) —{' '}
+                billed securely in INR via Razorpay (UPI, cards &amp; netbanking) -{' '}
                 <strong className="text-[#13111E]">₹{BUSINESS.proMonthlyINR}/month</strong> or{' '}
                 <strong className="text-[#13111E]">₹{BUSINESS.proYearlyINR.toLocaleString('en-IN')}/year</strong>.
                 Cancel anytime; access continues to the end of the billing period.
@@ -216,7 +216,7 @@ export default function Home() {
             Working on something we should build?
           </h2>
           <p className="mx-auto mt-3 max-w-[460px] text-[14.5px] leading-[1.7] text-[#C4C0E8]">
-            Partnerships, feedback, or just curious — we read every message.
+            Partnerships, feedback, or just curious - we read every message.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <Link href="/contact" className="no-underline">

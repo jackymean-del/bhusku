@@ -1,5 +1,5 @@
 /**
- * Shared chrome for the bhusku parent-brand site — sticky nav + footer.
+ * Shared chrome for the bhusku parent-brand site - sticky nav + footer.
  * bhusku now carries the family Fader U mark (the U-that-also-reads-as-b),
  * paired with the typographic wordmark. Footer carries the legal/policy links
  * Razorpay onboarding requires.
@@ -23,7 +23,7 @@ const LEGAL = [
 ]
 
 function Wordmark() {
-  // Lowercase "bhusku" in Plus Jakarta 800 — the family typographic mark.
+  // Lowercase "bhusku" in Plus Jakarta 800 - the family typographic mark.
   return (
     <span className="text-[19px] font-extrabold lowercase tracking-[-0.4px] text-[#13111E]">
       bhusku

@@ -1,7 +1,7 @@
 'use client'
 
 /**
- * Reveal — fade-and-rise a block when it scrolls into view (à la anthropic.com).
+ * Reveal - fade-and-rise a block when it scrolls into view.
  * Uses one IntersectionObserver per instance, fires once. The actual motion is
  * CSS (`.reveal` / `.is-visible` in globals.css) so it stays reduced-motion safe.
  */

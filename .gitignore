@@ -29,5 +29,5 @@ yarn-debug.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# claude code local
+# local editor config
 /.claude

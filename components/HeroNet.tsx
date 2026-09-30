@@ -1,6 +1,6 @@
 /**
- * Hero line-network — a calm, self-drawing constellation of nodes and links,
- * echoing anthropic.com's animated "net". Pure SVG + CSS (classes live in
+ * Hero line-network - a calm, self-drawing constellation of nodes and links,
+ * drawn as an animated "net". Pure SVG + CSS (classes live in
  * globals.css), so it works in static export and honours reduced motion.
  */
 const NODES = [
@@ -21,7 +21,7 @@ export function HeroNet() {
         viewBox="0 0 480 440"
         className="h-auto w-full"
         role="img"
-        aria-label="An abstract network of connected nodes — the studio, connected"
+        aria-label="An abstract network of connected nodes - the studio, connected"
       >
         <defs>
           <radialGradient id="heroNetGlow" cx="52%" cy="40%" r="62%">
