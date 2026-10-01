@@ -26,8 +26,9 @@ const PRINCIPLES = [
 
 const SCHEDU_FEATURES = [
   'Conflict-free timetables',
-  'Substitutions & live ops',
-  'Workload analytics',
+  'Every decision explained',
+  'Fair workloads',
+  'Yours to override',
   'Any board or curriculum',
 ]
 
@@ -160,8 +161,10 @@ export default function Home() {
                           Visit →
                         </span>
                       </div>
-                      <p className="mt-2 text-[13.5px] font-semibold text-[#7C6FE0]">{p.tagline}</p>
-                      <p className="mt-2 max-w-[620px] text-[13.5px] leading-[1.7] text-[#4B5275]">{p.blurb}</p>
+                      <h3 className="mt-3 text-[clamp(19px,2.4vw,24px)] font-bold leading-[1.25] tracking-[-0.4px] text-[#13111E]">
+                        {p.tagline}
+                      </h3>
+                      <p className="mt-3 max-w-[660px] text-[14.5px] leading-[1.75] text-[#4B5275]">{p.blurb}</p>
                       <div className="mt-4 flex flex-wrap gap-2">
                         {SCHEDU_FEATURES.map(f => (
                           <span key={f} className="rounded-full border border-[#ECE7FF] bg-[#FBFAFF] px-3 py-1 text-[11.5px] font-medium text-[#6B6398]">

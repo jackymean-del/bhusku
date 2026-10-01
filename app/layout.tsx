@@ -18,15 +18,15 @@ const dmMono = DM_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "bhusku - Heavy on craft. Full of energy.",
+    default: BRAND.seoTitle,
     template: "%s · bhusku",
   },
-  description: BRAND.blurb,
+  description: BRAND.seoDescription,
   openGraph: {
     type: "website",
     siteName: "bhusku",
     title: "bhusku - Heavy on craft. Full of energy.",
-    description: BRAND.blurb,
+    description: BRAND.seoDescription,
   },
   twitter: { card: "summary_large_image" },
 };

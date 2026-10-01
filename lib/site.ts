@@ -14,6 +14,10 @@ export const BRAND = {
   blurb:
     'bhusku is an independent tech & creative studio building calm, capable software for the work people actually do. We sweat the details so the tools disappear and the work gets easier.',
   email: 'hello@bhusku.com',
+  // What search results and link previews show for the homepage.
+  seoTitle: 'bhusku - Human-made software, starting with schedU',
+  seoDescription:
+    'Human-made software from Sambalpur, India. schedU builds conflict-free timetables with transparent, explainable logic - human intelligence, not black-box AI.',
 }
 
 // Business/legal identity - sole proprietorship.
@@ -36,9 +40,9 @@ export const BUSINESS = {
 export const PRODUCTS = [
   {
     name: 'schedU',
-    tagline: 'AI timetable scheduling for any institution',
+    tagline: 'Built with human intelligence, not black-box AI.',
     blurb:
-      'Auto-generate conflict-free timetables for schools, colleges, and universities - any board, any curriculum. Live operations, substitutions, and workload analytics included.',
+      'A real timetable isn’t a guess. schedU is the lived experience of building real schedules - the rules, the edge cases, the fairness - planned, turned into transparent logic, and implemented so you can see exactly why every decision was made. Predictable, explainable, and yours to override.',
     href: SCHEDU_URL,
     status: 'live' as const,
     markColor: '#7C6FE0',
