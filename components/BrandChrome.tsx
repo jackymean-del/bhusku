@@ -51,7 +51,7 @@ export function BrandChrome({ children }: { children: ReactNode }) {
         </div>
         <a href={SCHEDU_URL} className="no-underline">
           <button className="rounded-[7px] bg-[#13111E] px-[18px] py-2 text-[13px] font-semibold text-white">
-            Visit schedU
+            Visit SchedU
           </button>
         </a>
       </nav>
@@ -74,7 +74,7 @@ export function BrandChrome({ children }: { children: ReactNode }) {
           <div className="flex gap-14">
             <div className="flex flex-col gap-2.5">
               <span className="text-[11px] font-bold uppercase tracking-[0.1em] text-[#9A95BC]">Products</span>
-              <a href={SCHEDU_URL} className="text-[13px] text-[#4B5275] no-underline transition-colors hover:text-[#7C6FE0]">schedU</a>
+              <a href={SCHEDU_URL} className="text-[13px] text-[#4B5275] no-underline transition-colors hover:text-[#7C6FE0]">SchedU</a>
             </div>
             <div className="flex flex-col gap-2.5">
               <span className="text-[11px] font-bold uppercase tracking-[0.1em] text-[#9A95BC]">Legal</span>

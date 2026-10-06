@@ -1,7 +1,7 @@
 /**
  * bhusku family mark - the "Fader U", built on the golden circle.
  *
- * Same identity as schedU's SchedULogo (a U whose asymmetric stem also reads as
+ * Same identity as SchedU's SchedULogo (a U whose asymmetric stem also reads as
  * a `b`, with a gold "fader knob" riding the right stem) - per the brand system
  * one mark carries the whole family. This is that mark, reconstructed so every
  * dimension is a φ-power of ONE radius. Nothing here is eyeballed.

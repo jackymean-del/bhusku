@@ -14,7 +14,7 @@ const HERO_WORDS = [
 // Honest credibility markers - no fabricated logos, testimonials, or metrics.
 const TRUST = [
   { title: 'Founder-led & independent', body: 'No investors, no bloat - the people building make the calls.' },
-  { title: 'Live in production', body: 'schedU is available today, with more products in the works.' },
+  { title: 'Live in production', body: 'SchedU is available today, with more products in the works.' },
   { title: 'Honest by default', body: 'Transparent pricing, secure INR billing, and no dark patterns.' },
 ]
 
@@ -63,12 +63,12 @@ export default function Home() {
               style={{ animationDelay: '640ms' }}
             >
               bhusku is an independent tech &amp; creative studio. We sweat the details until the tools
-              disappear and the work gets easier - schedU is our first product, with more on the way.
+              disappear and the work gets easier - SchedU is our first product, with more on the way.
             </p>
             <div className="reveal-fade mt-9 flex flex-wrap items-center gap-3" style={{ animationDelay: '740ms' }}>
               <a href={SCHEDU_URL} className="no-underline">
                 <button className="rounded-[10px] bg-[#13111E] px-6 py-[13px] text-[14px] font-bold text-white">
-                  Explore schedU →
+                  Explore SchedU →
                 </button>
               </a>
               <Link href="/contact" className="no-underline">
@@ -82,7 +82,7 @@ export default function Home() {
               style={{ animationDelay: '840ms' }}
             >
               <span>Independent studio</span><span aria-hidden="true">·</span>
-              <span>schedU live in production</span><span aria-hidden="true">·</span>
+              <span>SchedU live in production</span><span aria-hidden="true">·</span>
               <span>Secure INR billing</span>
             </p>
           </div>
@@ -154,7 +154,7 @@ export default function Home() {
                     <div className="min-w-0 flex-1">
                       <div className="flex items-center gap-2.5">
                         <span className="text-[20px] font-black tracking-[-0.4px] text-[#13111E]">
-                          sched<span className="italic text-[#7C6FE0]">U</span>
+                          Sched<span className="text-[#685DBC]">U</span>
                         </span>
                         <span className="rounded-full bg-[#EDFBF3] px-2.5 py-0.5 text-[10.5px] font-bold uppercase tracking-wide text-[#16A34A]">Live</span>
                         <span className="ml-auto shrink-0 text-[14px] font-bold text-[#4B5275] transition-colors group-hover:text-[#7C6FE0]">
@@ -196,7 +196,7 @@ export default function Home() {
           <Reveal delay={90}>
             <div className="mt-8 max-w-[720px] rounded-[18px] border border-[#EFEBFF] bg-[#FCFBFF] p-7 sm:p-8">
               <p className="text-[15px] leading-[1.8] text-[#4B5275]">
-                Our products are free to start. schedU offers an optional <strong className="text-[#13111E]">Pro</strong> plan
+                Our products are free to start. SchedU offers an optional <strong className="text-[#13111E]">Pro</strong> plan
                 billed securely in INR via Razorpay (UPI, cards &amp; netbanking) -{' '}
                 <strong className="text-[#13111E]">₹{BUSINESS.proMonthlyINR}/month</strong> or{' '}
                 <strong className="text-[#13111E]">₹{BUSINESS.proYearlyINR.toLocaleString('en-IN')}/year</strong>.
@@ -204,7 +204,7 @@ export default function Home() {
               </p>
               <a href={`${SCHEDU_URL}/pricing`} className="mt-6 inline-block no-underline">
                 <button className="rounded-[10px] border border-[#E8E4FF] bg-white px-6 py-3 text-[14px] font-bold text-[#4B5275] transition-colors hover:border-[#7C6FE0] hover:text-[#7C6FE0]">
-                  See schedU pricing →
+                  See SchedU pricing →
                 </button>
               </a>
             </div>

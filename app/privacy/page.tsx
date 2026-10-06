@@ -12,7 +12,7 @@ export default function PrivacyPage() {
   return (
     <PolicyShell
       title="Privacy Policy"
-      intro={`This Privacy Policy explains how ${BUSINESS.entityLine} ("bhusku", "we") collects, uses, and protects personal data when you use our websites and products, including schedU.`}
+      intro={`This Privacy Policy explains how ${BUSINESS.entityLine} ("bhusku", "we") collects, uses, and protects personal data when you use our websites and products, including SchedU.`}
     >
       <Section heading="1. Information we collect">
         <ul>
