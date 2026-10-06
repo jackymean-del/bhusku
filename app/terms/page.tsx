@@ -12,7 +12,7 @@ export default function TermsPage() {
   return (
     <PolicyShell
       title="Terms & Conditions"
-      intro={`These Terms & Conditions ("Terms") govern your use of the websites and software products operated by ${BUSINESS.entityLine} ("bhusku", "we", "us"), including SchedU. By creating an account or using our products, you agree to these Terms.`}
+      intro={`These Terms & Conditions ("Terms") govern your use of the websites and software products operated by ${BUSINESS.entityLine} ("bhusku", "we", "us"), including schedU. By creating an account or using our products, you agree to these Terms.`}
     >
       <Section heading="1. Who we are">
         <p>
@@ -41,7 +41,7 @@ export default function TermsPage() {
 
       <Section heading="4. Plans, billing & taxes">
         <p>
-          Our products are free to start. Optional paid plans (for example, SchedU <strong>Pro</strong> at{' '}
+          Our products are free to start. Optional paid plans (for example, schedU <strong>Pro</strong> at{' '}
           <strong>₹{BUSINESS.proMonthlyINR}/month</strong> or <strong>₹{BUSINESS.proYearlyINR.toLocaleString('en-IN')}/year</strong>)
           are billed in Indian Rupees through our payment processor, <strong>Razorpay</strong>. Prices are shown at checkout and on the
           product&rsquo;s <a href={`${SCHEDU_URL}/pricing`}>pricing page</a>. Subscriptions renew automatically until cancelled.
@@ -60,7 +60,7 @@ export default function TermsPage() {
 
       <Section heading="6. Intellectual property">
         <p>
-          The products, including their software, design, and the bhusku and SchedU names and marks, are owned by us and
+          The products, including their software, design, and the bhusku and schedU names and marks, are owned by us and
           protected by law. These Terms do not grant you any rights in them beyond the right to use the products as intended.
         </p>
       </Section>

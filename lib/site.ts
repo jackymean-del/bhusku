@@ -15,9 +15,9 @@ export const BRAND = {
     'bhusku is an independent tech & creative studio building calm, capable software for the work people actually do. We sweat the details so the tools disappear and the work gets easier.',
   email: 'hello@bhusku.com',
   // What search results and link previews show for the homepage.
-  seoTitle: 'bhusku - Human-made software, starting with SchedU',
+  seoTitle: 'bhusku - Human-made software, starting with schedU',
   seoDescription:
-    'Human-made software from Sambalpur, India. SchedU builds conflict-free timetables with transparent, explainable logic - human intelligence, not black-box AI.',
+    'Human-made software from Sambalpur, India. schedU builds conflict-free timetables with transparent, explainable logic - human intelligence, not black-box AI.',
 }
 
 // Business/legal identity - sole proprietorship.
@@ -31,7 +31,7 @@ export const BUSINESS = {
   phone: '+91 96923 31138',
   address: ['Bhusku', 'Sambalpur, Odisha', 'India'],
   jurisdiction: 'Sambalpur, Odisha', // courts of this place govern disputes
-  // Kept in sync with SchedU's checkout (frontend subscription page + backend
+  // Kept in sync with schedU's checkout (frontend subscription page + backend
   // billing config). If pricing changes, update all three.
   proMonthlyINR: 333,
   proYearlyINR: 3333,
@@ -39,10 +39,10 @@ export const BUSINESS = {
 
 export const PRODUCTS = [
   {
-    name: 'SchedU',
+    name: 'schedU',
     tagline: 'Built with human intelligence, not black-box AI.',
     blurb:
-      'A real timetable isn’t a guess. SchedU is the lived experience of building real schedules - the rules, the edge cases, the fairness - planned, turned into transparent logic, and implemented so you can see exactly why every decision was made. Predictable, explainable, and yours to override.',
+      'A real timetable isn’t a guess. schedU is the lived experience of building real schedules - the rules, the edge cases, the fairness - planned, turned into transparent logic, and implemented so you can see exactly why every decision was made. Predictable, explainable, and yours to override.',
     href: SCHEDU_URL,
     status: 'live' as const,
     markColor: '#7C6FE0',

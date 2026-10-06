@@ -12,7 +12,7 @@ export default function RefundsPage() {
   return (
     <PolicyShell
       title="Cancellation & Refund Policy"
-      intro="We want you to be happy with what you pay for. This policy explains how subscriptions, cancellations, and refunds work for paid plans on bhusku products, including SchedU Pro."
+      intro="We want you to be happy with what you pay for. This policy explains how subscriptions, cancellations, and refunds work for paid plans on bhusku products, including schedU Pro."
     >
       <Section heading="1. Free to try">
         <p>
@@ -22,7 +22,7 @@ export default function RefundsPage() {
 
       <Section heading="2. Subscriptions & renewals">
         <p>
-          Paid plans (for example, SchedU <strong>Pro</strong> at <strong>₹{BUSINESS.proMonthlyINR}/month</strong> or{' '}
+          Paid plans (for example, schedU <strong>Pro</strong> at <strong>₹{BUSINESS.proMonthlyINR}/month</strong> or{' '}
           <strong>₹{BUSINESS.proYearlyINR.toLocaleString('en-IN')}/year</strong>) are recurring subscriptions billed in advance
           through Razorpay. They renew automatically at the end of each period until you cancel.
         </p>
