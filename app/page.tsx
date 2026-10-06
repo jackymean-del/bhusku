@@ -154,7 +154,7 @@ export default function Home() {
                     <div className="min-w-0 flex-1">
                       <div className="flex items-center gap-2.5">
                         <span className="text-[20px] font-black tracking-[-0.4px] text-[#13111E]">
-                          sched<span className="italic text-[#7C6FE0]">U</span>
+                          sched<span className="text-[#685DBC]">U</span>
                         </span>
                         <span className="rounded-full bg-[#EDFBF3] px-2.5 py-0.5 text-[10.5px] font-bold uppercase tracking-wide text-[#16A34A]">Live</span>
                         <span className="ml-auto shrink-0 text-[14px] font-bold text-[#4B5275] transition-colors group-hover:text-[#7C6FE0]">
