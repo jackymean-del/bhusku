@@ -31,3 +31,6 @@ next-env.d.ts
 
 # local editor config
 /.claude
+
+# Cloudflare wrangler local state (pages dev)
+.wrangler/
