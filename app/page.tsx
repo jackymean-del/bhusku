@@ -1,9 +1,14 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { BrandChrome } from '@/components/BrandChrome'
 import { BhuskuMark } from '@/components/Logo'
 import { HeroNet } from '@/components/HeroNet'
 import { Reveal } from '@/components/Reveal'
 import { BRAND, PRODUCTS, BUSINESS, SCHEDU_URL } from '@/lib/site'
+
+export const metadata: Metadata = {
+  alternates: { canonical: '/' },
+}
 
 // Hero headline, split for the staggered word-reveal.
 const HERO_WORDS = [
