@@ -1,8 +1,7 @@
 /**
- * Cloudflare Pages Function: forwards /api/* to the schedU server on Railway,
- * as vercel.json's rewrite does on Vercel. Only the contact form uses it
- * (POST /api/contact). public/_routes.json limits it to /api/*, so pages
- * never run it.
+ * Cloudflare Pages Function: forwards /api/* to the schedU server on Railway.
+ * Only the contact form uses it (POST /api/contact). public/_routes.json
+ * limits it to /api/*, so pages never run it.
  *
  * Not part of the Next build; Cloudflare compiles this folder on its own.
  */
