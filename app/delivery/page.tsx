@@ -44,8 +44,7 @@ export default function DeliveryPage() {
 
       <Section heading="4. Contact">
         <p>
-          {BUSINESS.entityLine}. Email <a href={`mailto:${BUSINESS.email}`}>{BUSINESS.email}</a>
-          {BUSINESS.phone && <> or call {BUSINESS.phone}</>}.
+          bhusku. Email <a href={`mailto:${BUSINESS.email}`}>{BUSINESS.email}</a>.
         </p>
       </Section>
     </PolicyShell>

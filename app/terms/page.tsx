@@ -13,13 +13,12 @@ export default function TermsPage() {
     <PolicyShell
       updated="terms"
       title="Terms & Conditions"
-      intro={`These Terms & Conditions ("Terms") govern your use of the websites and software products operated by ${BUSINESS.entityLine} ("bhusku", "we", "us"), including schedU. By creating an account or using our products, you agree to these Terms.`}
+      intro={`These Terms & Conditions ("Terms") govern your use of the websites and software products operated by bhusku ("we", "us"), including schedU. By creating an account or using our products, you agree to these Terms.`}
     >
       <Section heading="1. Who we are">
         <p>
-          bhusku is operated by <strong>{BUSINESS.entityLine}</strong>. You can reach us at{' '}
-          <a href={`mailto:${BUSINESS.email}`}>{BUSINESS.email}</a>
-          {BUSINESS.phone && <> or {BUSINESS.phone}</>}.
+          These products are operated by <strong>bhusku</strong>, based in {BUSINESS.jurisdiction}, India. You can reach us at{' '}
+          <a href={`mailto:${BUSINESS.email}`}>{BUSINESS.email}</a>.
         </p>
       </Section>
 

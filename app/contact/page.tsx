@@ -27,10 +27,6 @@ export default function ContactPage() {
               <a href={`mailto:${BRAND.email}`} className="font-semibold text-[#7C6FE0] no-underline">{BRAND.email}</a>
             </div>
             <div>
-              <div className="text-[11px] font-bold uppercase tracking-[0.1em] text-[#9A95BC]">Phone</div>
-              <a href={`tel:${BUSINESS.phone.replace(/\s/g, '')}`} className="text-[#4B5275] no-underline">{BUSINESS.phone}</a>
-            </div>
-            <div>
               <div className="text-[11px] font-bold uppercase tracking-[0.1em] text-[#9A95BC]">Address</div>
               <address className="not-italic text-[#4B5275]">
                 {BUSINESS.address.map(line => <div key={line}>{line}</div>)}

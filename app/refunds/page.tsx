@@ -17,7 +17,7 @@ export default function RefundsPage() {
     >
       <Section heading="1. Who you pay">
         <p>
-          All payments are processed by Razorpay and made to <strong>{BUSINESS.entityLine}</strong>.
+          All payments are processed by Razorpay and made to <strong>bhusku</strong>.
         </p>
       </Section>
 
@@ -69,8 +69,7 @@ export default function RefundsPage() {
 
       <Section heading="7. Contact">
         <p>
-          Questions about billing? Email <a href={`mailto:${BUSINESS.email}`}>{BUSINESS.email}</a>
-          {BUSINESS.phone && <> or call {BUSINESS.phone}</>}.
+          Questions about billing? Email <a href={`mailto:${BUSINESS.email}`}>{BUSINESS.email}</a>.
         </p>
       </Section>
     </PolicyShell>

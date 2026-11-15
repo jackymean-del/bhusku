@@ -18,15 +18,11 @@ export const BRAND = {
     'Human-made software from Sambalpur, India. schedU builds conflict-free timetables with transparent, explainable logic - human intelligence, not black-box AI.',
 }
 
-// Business/legal identity - sole proprietorship.
+// Business identity shown on the site and policy pages. By the owner's choice
+// the site names only the bhusku business and its email - no personal name or
+// phone number.
 export const BUSINESS = {
-  // The proprietor's full legal name (as on PAN / bank account used for payouts).
-  legalName: 'Jugal K. Sunar',
-  // "<Legal name> (sole proprietor), trading as bhusku"
-  entityLine: 'Jugal K. Sunar (sole proprietor), trading as bhusku',
   email: 'hello@bhusku.com',
-  // Optional but recommended for Razorpay + trust.
-  phone: '+91 96923 31138',
   address: ['Bhusku', 'Sambalpur, Odisha', 'India'],
   jurisdiction: 'Sambalpur, Odisha', // courts of this place govern disputes
   // Kept in sync with schedU's plans (schedu.bhusku.com/pricing, the app's
