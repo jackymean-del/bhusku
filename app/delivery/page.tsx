@@ -33,8 +33,8 @@ export default function DeliveryPage() {
       <Section heading="2. If your plan has not started">
         <p>
           If you have paid and the app still shows your earlier plan after 30 minutes, email{' '}
-          <a href={`mailto:${BUSINESS.email}`}>{BUSINESS.email}</a> with the payment date and amount. We will switch the plan on, or
-          refund the payment as our <a href="/refunds">Cancellation &amp; Refund Policy</a> describes.
+          <a href={`mailto:${BUSINESS.email}`}>{BUSINESS.email}</a> with the payment date and amount, and we will switch the plan on
+          within 2 working days. See also our <a href="/refunds">Cancellation &amp; Refund Policy</a>.
         </p>
       </Section>
 

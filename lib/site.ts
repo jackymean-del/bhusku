@@ -52,8 +52,8 @@ export const PRODUCTS = [
 // Human-readable "last updated" dates for the policy pages. Update the one
 // for a page whenever its wording changes.
 export const POLICY_UPDATED = {
-  terms: '15 November 2026',
+  terms: '16 November 2026',
   privacy: '20 July 2026',
-  refunds: '15 November 2026',
-  delivery: '15 November 2026',
+  refunds: '16 November 2026',
+  delivery: '16 November 2026',
 }

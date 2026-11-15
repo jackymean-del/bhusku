@@ -4,7 +4,7 @@ import { BUSINESS } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Cancellation & Refund Policy',
-  description: 'How subscriptions, cancellations, and refunds work for bhusku products.',
+  description: 'Payments for bhusku products are final. Try the Free plan first, cancel any time, and keep your plan until the period you paid for ends.',
   alternates: { canonical: '/refunds' },
 }
 
@@ -13,59 +13,64 @@ export default function RefundsPage() {
     <PolicyShell
       updated="refunds"
       title="Cancellation & Refund Policy"
-      intro="We want you to be happy with what you pay for. This policy explains how subscriptions, cancellations, and refunds work for paid plans on bhusku products, including schedU Pro."
+      intro="This policy covers subscriptions, cancellations and payments for paid plans on bhusku products, including schedU Pro."
     >
-      <Section heading="1. Free to try">
+      <Section heading="1. Who you pay">
         <p>
-          Every product is free to start, so you can evaluate it fully before paying. Paid plans are optional upgrades.
+          All payments are processed by Razorpay and made to <strong>{BUSINESS.entityLine}</strong>.
         </p>
       </Section>
 
-      <Section heading="2. Subscriptions & renewals">
+      <Section heading="2. No refunds">
         <p>
-          Paid plans (for example, schedU <strong>Pro</strong>, priced by staff from{' '}
-          <strong>₹{BUSINESS.proYearlyINR.toLocaleString('en-IN')}/year</strong> or <strong>₹{BUSINESS.proMonthlyINR}/month</strong> for up to{' '}
-          {BUSINESS.proStaffPerUnit} staff) are recurring subscriptions billed in advance
-          through Razorpay. They renew automatically at the end of each period until you cancel.
+          All payments for subscription plans are final and non-refundable. Once a payment has been processed, we do not give
+          refunds, credits or prorated amounts for any unused part of a subscription period, whatever the reason for cancelling.
+          This applies to monthly and yearly plans alike.
         </p>
       </Section>
 
-      <Section heading="3. Cancelling">
+      <Section heading="3. Try it free first">
         <p>
-          You can cancel anytime from your account&rsquo;s subscription page. Cancellation stops future renewals - you keep Pro
-          access until the end of the period you have already paid for, and you are not charged again after that.
+          Every account can use the Free plan at no cost and with no time limit. On schedU, Free covers schools of up to{' '}
+          {BUSINESS.freeStaff} staff and makes clash-free timetables with every view, Excel and PDF. Running the school day (cover and
+          substitution, the live view and corridor board, parallel groups, syllabus tracking, calendar and share links, and reports)
+          needs a paid plan.
+        </p>
+        <p>
+          We strongly encourage you to use the Free plan, and to{' '}
+          <a href={`mailto:${BUSINESS.email}`}>ask us for a demonstration</a>, before buying any paid plan. That way you can be sure
+          the product meets your needs before you make a financial commitment.
         </p>
       </Section>
 
-      <Section heading="4. Refunds">
-        <ul>
-          <li>
-            <strong>Duplicate or failed charges:</strong> if you were charged in error, more than once, or charged despite a failed
-            transaction, we will refund the incorrect amount in full.
-          </li>
-          <li>
-            <strong>7-day satisfaction window:</strong> if you upgrade to a paid plan and are not satisfied, contact us within{' '}
-            <strong>7 days</strong> of that payment and we will refund it, provided the plan was not substantially used to export or
-            operate at scale.
-          </li>
-          <li>
-            <strong>After the window:</strong> beyond 7 days, payments for the current period are generally non-refundable - but you
-            can cancel to avoid future charges, and we&rsquo;ll always look at genuine issues case by case.
-          </li>
-        </ul>
-      </Section>
-
-      <Section heading="5. How to request a refund">
+      <Section heading="4. Cancelling">
         <p>
-          Email <a href={`mailto:${BUSINESS.email}`}>{BUSINESS.email}</a> from your account email with your name and the approximate
-          date of the charge. Approved refunds are processed to your original payment method via Razorpay, typically within{' '}
-          <strong>5–7 business days</strong> (your bank may take a little longer to reflect it).
+          You can cancel a subscription at any time from the Subscription page in the app. No reason or notice is needed. You keep
+          your paid features until the end of the month or year you have already paid for, and you are not charged again.
+        </p>
+        <p>
+          After that, the account moves to the Free plan. Paid features stop, but nothing is deleted: your timetables stay and can
+          still be viewed and exported. No partial refund is given for cancelling early.
         </p>
       </Section>
 
-      <Section heading="6. Contact">
+      <Section heading="5. Billing errors">
         <p>
-          Questions about billing or refunds? We&rsquo;re happy to help - <a href={`mailto:${BUSINESS.email}`}>{BUSINESS.email}</a>.
+          The only exception is a mistake in billing: a duplicate charge, a charge after you cancelled, or an amount different from
+          the price shown at checkout. Email <a href={`mailto:${BUSINESS.email}`}>{BUSINESS.email}</a> with the payment date and
+          amount, and we will return the amount charged in error to the original payment method. If a payment fails but money
+          leaves your account, Razorpay and your bank reverse it automatically.
+        </p>
+      </Section>
+
+      <Section heading="6. Enterprise plans">
+        <p>Enterprise plans follow the payment terms in the institution&rsquo;s written agreement.</p>
+      </Section>
+
+      <Section heading="7. Contact">
+        <p>
+          Questions about billing? Email <a href={`mailto:${BUSINESS.email}`}>{BUSINESS.email}</a>
+          {BUSINESS.phone && <> or call {BUSINESS.phone}</>}.
         </p>
       </Section>
     </PolicyShell>
