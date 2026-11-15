@@ -6,13 +6,18 @@ import type { ReactNode } from 'react'
 import { BrandChrome } from '@/components/BrandChrome'
 import { POLICY_UPDATED } from '@/lib/site'
 
-export function PolicyShell({ title, intro, children }: { title: string; intro?: string; children: ReactNode }) {
+export function PolicyShell({ title, updated, intro, children }: {
+  title: string
+  updated: keyof typeof POLICY_UPDATED
+  intro?: string
+  children: ReactNode
+}) {
   return (
     <BrandChrome>
       <article className="mx-auto max-w-[760px] px-6 py-16">
         <p className="mb-2 text-[11px] font-bold uppercase tracking-[0.14em] text-[#9A95BC]">Legal</p>
         <h1 className="text-[clamp(28px,4vw,40px)] font-extrabold leading-[1.15] tracking-[-1px] text-[#13111E]">{title}</h1>
-        <p className="mt-2 text-[13px] text-[#9A95BC]">Last updated: {POLICY_UPDATED}</p>
+        <p className="mt-2 text-[13px] text-[#9A95BC]">Last updated: {POLICY_UPDATED[updated]}</p>
         {intro && <p className="mt-6 text-[15px] leading-[1.8] text-[#4B5275]">{intro}</p>}
         <div className="policy mt-8 flex flex-col gap-6">{children}</div>
       </article>

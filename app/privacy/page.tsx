@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 export default function PrivacyPage() {
   return (
     <PolicyShell
+      updated="privacy"
       title="Privacy Policy"
       intro={`This Privacy Policy explains how ${BUSINESS.entityLine} ("bhusku", "we") collects, uses, and protects personal data when you use our websites and products, including schedU.`}
     >

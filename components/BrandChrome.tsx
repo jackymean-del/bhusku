@@ -19,6 +19,7 @@ const LEGAL = [
   { label: 'Terms', href: '/terms' },
   { label: 'Privacy', href: '/privacy' },
   { label: 'Refunds', href: '/refunds' },
+  { label: 'Delivery', href: '/delivery' },
   { label: 'Contact', href: '/contact' },
 ]
 
@@ -88,7 +89,7 @@ export function BrandChrome({ children }: { children: ReactNode }) {
           </div>
         </div>
         <div className="mx-auto mt-8 max-w-[1100px] border-t border-[#ECE6DC] pt-5 text-[12px] text-[#9A95BC]">
-          © {new Date().getFullYear()} bhusku · Heavy on craft. Full of energy.
+          © {new Date().getFullYear()} bhusku · Sambalpur, Odisha, India
         </div>
       </footer>
     </div>

@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 export default function TermsPage() {
   return (
     <PolicyShell
+      updated="terms"
       title="Terms & Conditions"
       intro={`These Terms & Conditions ("Terms") govern your use of the websites and software products operated by ${BUSINESS.entityLine} ("bhusku", "we", "us"), including schedU. By creating an account or using our products, you agree to these Terms.`}
     >
@@ -41,8 +42,9 @@ export default function TermsPage() {
 
       <Section heading="4. Plans, billing & taxes">
         <p>
-          Our products are free to start. Optional paid plans (for example, schedU <strong>Pro</strong> at{' '}
-          <strong>₹{BUSINESS.proMonthlyINR}/month</strong> or <strong>₹{BUSINESS.proYearlyINR.toLocaleString('en-IN')}/year</strong>)
+          Our products are free to start. Optional paid plans (for example, schedU <strong>Pro</strong>, priced by staff from{' '}
+          <strong>₹{BUSINESS.proYearlyINR.toLocaleString('en-IN')}/year</strong> or <strong>₹{BUSINESS.proMonthlyINR}/month</strong> for up to{' '}
+          {BUSINESS.proStaffPerUnit} staff)
           are billed in Indian Rupees through our payment processor, <strong>Razorpay</strong>. Prices are shown at checkout and on the
           product&rsquo;s <a href={`${SCHEDU_URL}/pricing`}>pricing page</a>. Subscriptions renew automatically until cancelled.
           You can cancel anytime; cancellation takes effect at the end of the current billing period. Refunds are governed by our{' '}

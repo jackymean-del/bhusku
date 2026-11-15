@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 export default function RefundsPage() {
   return (
     <PolicyShell
+      updated="refunds"
       title="Cancellation & Refund Policy"
       intro="We want you to be happy with what you pay for. This policy explains how subscriptions, cancellations, and refunds work for paid plans on bhusku products, including schedU Pro."
     >
@@ -22,8 +23,9 @@ export default function RefundsPage() {
 
       <Section heading="2. Subscriptions & renewals">
         <p>
-          Paid plans (for example, schedU <strong>Pro</strong> at <strong>₹{BUSINESS.proMonthlyINR}/month</strong> or{' '}
-          <strong>₹{BUSINESS.proYearlyINR.toLocaleString('en-IN')}/year</strong>) are recurring subscriptions billed in advance
+          Paid plans (for example, schedU <strong>Pro</strong>, priced by staff from{' '}
+          <strong>₹{BUSINESS.proYearlyINR.toLocaleString('en-IN')}/year</strong> or <strong>₹{BUSINESS.proMonthlyINR}/month</strong> for up to{' '}
+          {BUSINESS.proStaffPerUnit} staff) are recurring subscriptions billed in advance
           through Razorpay. They renew automatically at the end of each period until you cancel.
         </p>
       </Section>

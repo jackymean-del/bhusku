@@ -11,8 +11,6 @@ export const SCHEDU_URL = 'https://schedu.bhusku.com'
 export const BRAND = {
   name: 'bhusku',
   tagline: 'Heavy on craft. Full of energy.',
-  blurb:
-    'bhusku is an independent tech & creative studio building calm, capable software for the work people actually do. We sweat the details so the tools disappear and the work gets easier.',
   email: 'hello@bhusku.com',
   // What search results and link previews show for the homepage.
   seoTitle: 'bhusku - Human-made software, starting with schedU',
@@ -31,10 +29,14 @@ export const BUSINESS = {
   phone: '+91 96923 31138',
   address: ['Bhusku', 'Sambalpur, Odisha', 'India'],
   jurisdiction: 'Sambalpur, Odisha', // courts of this place govern disputes
-  // Kept in sync with schedU's checkout (frontend subscription page + backend
-  // billing config). If pricing changes, update all three.
+  // Kept in sync with schedU's plans (schedu.bhusku.com/pricing, the app's
+  // subscription page and the backend billing config). Pro is priced per
+  // block of proStaffPerUnit staff; Enterprise starts above enterpriseAbove.
+  freeStaff: 20,
+  proStaffPerUnit: 40,
   proMonthlyINR: 333,
   proYearlyINR: 3333,
+  enterpriseAbove: 200,
 }
 
 export const PRODUCTS = [
@@ -44,10 +46,14 @@ export const PRODUCTS = [
     blurb:
       'A real timetable isn’t a guess. schedU is the lived experience of building real schedules - the rules, the edge cases, the fairness - planned, turned into transparent logic, and implemented so you can see exactly why every decision was made. Predictable, explainable, and yours to override.',
     href: SCHEDU_URL,
-    status: 'live' as const,
-    markColor: '#7C6FE0',
   },
 ]
 
-// Human-readable "last updated" for the policy pages. Update when you edit them.
-export const POLICY_UPDATED = '20 July 2026'
+// Human-readable "last updated" dates for the policy pages. Update the one
+// for a page whenever its wording changes.
+export const POLICY_UPDATED = {
+  terms: '15 November 2026',
+  privacy: '20 July 2026',
+  refunds: '15 November 2026',
+  delivery: '15 November 2026',
+}
