@@ -30,7 +30,7 @@ const SCHEDU_FEATURES = [
   'Live view of the day',
   'Parallel groups',
   'Syllabus tracking',
-  'Any board or curriculum',
+  'Fits any institution',
 ]
 
 const EYEBROW = 'mb-3 text-[11px] font-bold uppercase tracking-[0.14em] text-[#9A95BC]'
@@ -64,7 +64,7 @@ export default function Home() {
               style={{ animationDelay: '640ms' }}
             >
               We sweat the details until the tools disappear and the work gets easier. Our first product,
-              schedU, helps schools build and run their timetables.
+              schedU, helps institutions build and run their timetables.
             </p>
             <div className="reveal-fade mt-9 flex flex-wrap items-center gap-3" style={{ animationDelay: '740ms' }}>
               <a href={SCHEDU_URL} className="no-underline">
@@ -173,11 +173,11 @@ export default function Home() {
           <Reveal delay={90}>
             <div className="mt-8 max-w-[720px] rounded-[18px] border border-[#EFEBFF] bg-[#FCFBFF] p-7 sm:p-8">
               <p className="text-[15px] leading-[1.8] text-[#4B5275]">
-                schedU is free for schools of up to {BUSINESS.freeStaff} staff. <strong className="text-[#13111E]">Pro</strong>,
-                which runs the whole school day, is{' '}
+                schedU is free for institutions of up to {BUSINESS.freeStaff} staff. <strong className="text-[#13111E]">Pro</strong>,
+                which runs the whole working day, is{' '}
                 <strong className="text-[#13111E]">₹{BUSINESS.proYearlyINR.toLocaleString('en-IN')}/year</strong> or{' '}
                 <strong className="text-[#13111E]">₹{BUSINESS.proMonthlyINR}/month</strong> for every{' '}
-                {BUSINESS.proStaffPerUnit} staff, up to {BUSINESS.enterpriseAbove}; larger schools and groups get an Enterprise plan.
+                {BUSINESS.proStaffPerUnit} staff, up to {BUSINESS.enterpriseAbove}; larger institutions and groups get an Enterprise plan.
                 Billed in INR via Razorpay (UPI, cards &amp; netbanking). Cancel anytime and keep access to the end of the period
                 you paid for.
               </p>

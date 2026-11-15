@@ -31,8 +31,8 @@ export default function RefundsPage() {
 
       <Section heading="3. Try it free first">
         <p>
-          Every account can use the Free plan at no cost and with no time limit. On schedU, Free covers schools of up to{' '}
-          {BUSINESS.freeStaff} staff and makes clash-free timetables with every view, Excel and PDF. Running the school day (cover and
+          Every account can use the Free plan at no cost and with no time limit. On schedU, Free covers institutions of up to{' '}
+          {BUSINESS.freeStaff} staff and makes clash-free timetables with every view, Excel and PDF. Running the working day (cover and
           substitution, the live view and corridor board, parallel groups, syllabus tracking, calendar and share links, and reports)
           needs a paid plan.
         </p>
