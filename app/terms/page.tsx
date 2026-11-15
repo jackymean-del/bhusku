@@ -46,7 +46,8 @@ export default function TermsPage() {
           {BUSINESS.proStaffPerUnit} staff)
           are billed in Indian Rupees through our payment processor, <strong>Razorpay</strong>. Prices are shown at checkout and on the
           product&rsquo;s <a href={`${SCHEDU_URL}/pricing`}>pricing page</a>. Subscriptions renew automatically until cancelled.
-          You can cancel anytime; cancellation takes effect at the end of the current billing period. Payments are final and
+          You can cancel anytime; paid features continue until the end of the current billing period and for{' '}
+          {BUSINESS.graceDays} days after it. Payments are final and
           non-refundable, as our <a href="/refunds">Cancellation &amp; Refund Policy</a> sets out. Applicable taxes may be added as required by law.
         </p>
       </Section>

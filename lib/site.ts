@@ -33,6 +33,9 @@ export const BUSINESS = {
   proMonthlyINR: 333,
   proYearlyINR: 3333,
   enterpriseAbove: 200,
+  // Paid features stay on this many days after a cancelled plan's billing
+  // period ends, before the account moves to Free.
+  graceDays: 7,
 }
 
 export const PRODUCTS = [

@@ -178,8 +178,8 @@ export default function Home() {
                 <strong className="text-[#13111E]">₹{BUSINESS.proYearlyINR.toLocaleString('en-IN')}/year</strong> or{' '}
                 <strong className="text-[#13111E]">₹{BUSINESS.proMonthlyINR}/month</strong> for every{' '}
                 {BUSINESS.proStaffPerUnit} staff, up to {BUSINESS.enterpriseAbove}; larger institutions and groups get an Enterprise plan.
-                Billed in INR via Razorpay (UPI, cards &amp; netbanking). Cancel anytime and keep access to the end of the period
-                you paid for.
+                Billed in INR via Razorpay (UPI, cards &amp; netbanking). Cancel anytime and keep paid features until the end of your
+                billing period, plus {BUSINESS.graceDays} days.
               </p>
               <a href={`${SCHEDU_URL}/pricing`} className="mt-6 inline-block no-underline">
                 <button className="rounded-[10px] border border-[#E8E4FF] bg-white px-6 py-3 text-[14px] font-bold text-[#4B5275] transition-colors hover:border-[#7C6FE0] hover:text-[#7C6FE0]">

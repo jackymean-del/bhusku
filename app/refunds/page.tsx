@@ -24,8 +24,7 @@ export default function RefundsPage() {
       <Section heading="2. No refunds">
         <p>
           All payments for subscription plans are final and non-refundable. Once a payment has been processed, we do not give
-          refunds, credits or prorated amounts for any unused part of a subscription period, whatever the reason for cancelling.
-          This applies to monthly and yearly plans alike.
+          refunds, credits or prorated amounts for any unused part of a billing period, whatever the reason for cancelling.
         </p>
       </Section>
 
@@ -45,11 +44,12 @@ export default function RefundsPage() {
 
       <Section heading="4. Cancelling">
         <p>
-          You can cancel a subscription at any time from the Subscription page in the app. No reason or notice is needed. You keep
-          your paid features until the end of the month or year you have already paid for, and you are not charged again.
+          You can cancel your subscription at any time from the Subscription page in the app. No reason or notice is needed, and
+          you are not charged again. You keep access to paid features until the end of your current billing period, and for{' '}
+          {BUSINESS.graceDays} days after it.
         </p>
         <p>
-          After that, the account moves to the Free plan. Paid features stop, but nothing is deleted: your timetables stay and can
+          After that, the account moves to the Free plan: paid features stop and nothing is deleted. Your timetables stay and can
           still be viewed and exported. No partial refund is given for cancelling early.
         </p>
       </Section>
